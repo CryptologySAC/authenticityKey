@@ -8,7 +8,7 @@ With a few simple steps we can use the Ark blockchain - or sidechain - to prove 
 
 <h2>The Autenticity Key</h2>
 
-<h3>Authenticate the product<h3>
+<h3>Authenticate the product</h3>
 
 <p>By making a simple transaction to his own wallet (wallet x to wallet x) with a verificationKey in the vendor field a retailer/producer can initiate the authenticity of his product:</p>
 

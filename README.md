@@ -1,18 +1,18 @@
-# authenticityKey
-Verification procedure to proof the authenticity of a product by using the Ark blockchain
+<h1>authenticityKey</h1>
+<p>Verification procedure to proof the authenticity of a product by using the Ark blockchain</p>
 
-##Concept
+<h2>Concept</h2>
 
-Nowadays it is common that products are copied and presented to the market as if they are original. 
-With a few simple steps we can use the Ark blockchain - or sidechain - to prove authenticity of a product.
+<p>Nowadays it is common that products are copied and presented to the market as if they are original. 
+With a few simple steps we can use the Ark blockchain - or sidechain - to prove authenticity of a product.</p>
 
-##The Autenticity Key
+<h2>The Autenticity Key</h2>
 
-###Authenticate the product
-By making a simple transaction to his own wallet (wallet x to wallet x) with a verificationKey in the vendor field a retailer/producer 
-can initiate the authenticity of his product:
+<h3>Authenticate the product<h3>
 
-Do per individual product:
+<p>By making a simple transaction to his own wallet (wallet x to wallet x) with a verificationKey in the vendor field a retailer/producer can initiate the authenticity of his product:</p>
+
+<p>Do per individual product:<p>
 
 POST 'seed' of wallet to use to server:port/add
 
@@ -26,11 +26,11 @@ POST 'seed' of wallet to use to server:port/add
 
 The product is now uniquely linked to the blockchain and the producer.
 
-###Verify the product
+<h3>Verify the product</h3>
 
-GET 'transactionId' and 'signature' to server:port/verify
+<p>GET 'transactionId' and 'signature' to server:port/verify</p>
 
-For the purchaser or seller of the product it is now very easy to proof that the product is authentic:
+<p>For the purchaser or seller of the product it is now very easy to proof that the product is authentic:</p>
 
 1) He retrieves the transactionID and signature from the product. The signature is only known to this product;
 
@@ -42,8 +42,8 @@ For the purchaser or seller of the product it is now very easy to proof that the
 
 4) This verifies that the signature is correct for this address and verificationField.
 
-##To still figure out
-In worse case a copier can now purchase a handful of original products and clone their keys and fake products can show up with all the same keys that will verify.
+<h2>To still figure out</h2>
+<p>In worse case a copier can now purchase a handful of original products and clone their keys and fake products can show up with all the same keys that will verify.</p>
 
-##Optional
-Create a 'notary' wallet that can authenticate producers/retailers as verified by sending a tranasction to the wallet of the producer/retailer.
+<h2>Optional</h2>
+<p>Create a 'notary' wallet that can authenticate producers/retailers as verified by sending a tranasction to the wallet of the producer/retailer.<p>

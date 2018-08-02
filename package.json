@@ -7,7 +7,10 @@
     "test": "jest --forceExit",
     "test:watch": "jest --watch",
     "lint": "eslint ./ --fix",
-    "depcheck": "depcheck ./"
+    "depcheck": "depcheck ./",
+    "watch": "webpack --watch --mode development",
+    "build": "webpack --mode development",
+    "build-production": "webpack --mode production"
   },
   "repository": {
     "type": "git",
@@ -26,6 +29,11 @@
   },
   "homepage": "https://github.com/wownmedia/authenticityKey#readme",
   "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "css-loader": "^1.0.0",
     "depcheck": "^0.6.9",
     "eslint": "^4.19.1",
     "eslint-config-standard": "^11.0.0",
@@ -38,7 +46,12 @@
     "jest-extended": "^0.7.2",
     "lint-staged": "^7.1.3",
     "regenerator-runtime": "^0.11.1",
-    "standard": "^11.0.1"
+    "sass-loader": "^7.1.0",
+    "standard": "^11.0.1",
+    "vue-loader": "^15.2.6",
+    "vue-template-compiler": "^2.5.17",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5"
   },
   "husky": {
     "hooks": {
@@ -60,6 +73,8 @@
     "is-url": "^1.2.4",
     "joi": "^13.5.2",
     "lodash": "^4.17.10",
-    "pino": "^4.17.6"
+    "pino": "^4.17.6",
+    "vue": "^2.5.17",
+    "webpack": "^4.16.3"
   }
 }

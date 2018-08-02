@@ -1,7 +1,7 @@
 'use strict'
 
 const arkjs = require('arkjs')
-const Verification = require('../../lib/utils/verification')
+const Verification = require('../lib/server/utils/verification')
 const networkVersion = 30 // Devnet
 const verification = new Verification(networkVersion)
 
@@ -170,7 +170,7 @@ describe('verification.verifySignature', () => {
     expect(result.verificationKey).toBe(verificationKey)
     expect(result.authentic).toBeTrue()
   })
-  
+
   it('should correctly unverify a transaction from the blockchain', async () => {
     const transactionId = '0dae977ec5ad2f9eb8e64ff516be29d6addb4e4b5c024994912e0d4860c7bdcc'
     const signature = 'BAD5022100fc7e30b895cc97bd00895d8e0751e800dae36922a03f46168ff1d9588b66e38e02200a2214497abb119de2a8031465f33e02714c990fb39782c24c7f0676598616c6'

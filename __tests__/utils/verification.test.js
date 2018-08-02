@@ -1,7 +1,7 @@
 'use strict'
 
 const arkjs = require('arkjs')
-const Verification = require('../lib/server/utils/verification')
+const Verification = require('../../lib/server/utils/verification')
 const networkVersion = 30 // Devnet
 const verification = new Verification(networkVersion)
 

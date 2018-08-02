@@ -1,6 +1,6 @@
 'use strict'
 
-const logger = require('../lib/server/logger.js')
+const logger = require('../../lib/server/logger.js')
 
 describe('logger', () => {
   it('should be an object', () => {

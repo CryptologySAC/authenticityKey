@@ -1,7 +1,7 @@
 'use strict'
 jest.setTimeout(30000)
 
-const network = require('../lib/server/network.js')
+const network = require('../../lib/server/network.js')
 
 describe('network', () => {
   it('should be an object', () => {

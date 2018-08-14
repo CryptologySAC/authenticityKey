@@ -1,6 +1,9 @@
 start:
 	nodemon
 
+start-dev:
+	NODE_ENV=test nodemon
+
 watch:
 	npm run-script watch
 

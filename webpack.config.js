@@ -4,7 +4,7 @@ const VueLoaderPlugin = require('vue-loader/lib/plugin')
 module.exports = {
   entry: './lib/app/main.js',
   output: {
-    path: __dirname + '/public/',
+    path: path.join(__dirname, '/public/'),
     publicPath: '/',
     filename: 'main.js'
   },
@@ -18,6 +18,14 @@ module.exports = {
         use: [
           'vue-style-loader',
           'css-loader'
+        ]
+      },
+      {
+        test: /\.scss$/,
+        use: [
+          'style-loader',
+          'css-loader',
+          'sass-loader'
         ]
       },
       {
@@ -40,11 +48,11 @@ module.exports = {
         }
       },
       {
-        test: /\.(png|jpg|gif|svg)$/,
+        test: /\.(png|jpg|gif|svg|eot|svg|ttf|woff|woff2)$/,
         loader: 'file-loader',
         options: {
           name: '[name].[ext]?[hash]'
-      },
+      }
     }
   ]},
   resolve: {
@@ -52,5 +60,5 @@ module.exports = {
       'vue$': 'vue/dist/vue.esm.js'
     },
     extensions: ['*', '.js', '.vue', '.json']
-  },
+  }
 }
